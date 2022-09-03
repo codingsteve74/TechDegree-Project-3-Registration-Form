@@ -37,34 +37,34 @@
         <fieldset>
           <legend>Contact Information</legend>
           
-          <div>
+          <div class="col1">
             <label for="cust-full-name">Full Name</label>
             <input type="text" id="cust-full-name" name="customer-name" placeholder="Required" minlength="3" required>
           </div>
 
-          <div>
+          <div class="col1">
             <label for="cust-Email">Email Address</label>
             <input type="email" id="cust-Email" name="customer-email" placeholder="Required" required>
           </div>
 
-          <div>
+          <div class="col1">
             <label for="cust-phone">Phone Number</label>
-            <input type="tel" id="cust=phone" name="customer-phone" required>
+            <input type="tel" id="cust-phone" name="customer-phone" required>
           </div>
 
-          <div>
+          <div class="col1">
             <label for="cust-address">Street Address</label>
             <input type="text" id="cust-address" name="customer-address" minlength="10" required>
           </div>
 
-          <div>
+          <div class="col1">
             <label for="cust-city">City</label>
             <input type="text" id="cust-city" name="customer-city" minlength="5" required>
           </div>
 
-          <div>
+          <div class="col1">
             <label for="cust-state">State</label>
-            <select id="cust-state" name="customer-state">
+            <select class="ddm-list" id="cust-state" name="customer-state">
               <option>Choose State</option>
               <option value="AK">AK</option>
               <option value="AL">AL</option>
@@ -120,7 +120,7 @@
             </select>
           </div>
 
-          <div>
+          <div class="col1">
             <label for="cust-zip">Zip Code</label>
             <input type="text" id="cust-zip" name="customer=zip=code" minlength="6" required>
           </div>
@@ -130,9 +130,23 @@
         <fieldset>
           <legend>newsletter</legend>
 
-          <label>Select the newsletters you would like to recieve.</label>
+          <label>Select the newsletters you would like to recieve.</label><br>
 
-          <label>newsletter Format</label>
+          <input type="checkbox" id="html-options" name="html-options">
+          <label for="html-options">HTML News</label><br>
+
+          <input type="checkbox" id="css-options" name="css-options">
+          <label for="css-options">CSS News</label><br>
+        
+          <input type="checkbox" id="js-options" name="js-options">
+          <label for="js-options">JavaScript News</label><br>
+
+          <label>newsletter Format</label><br>
+          <input type="radio" id="html-format" name="email-format">
+          <label for="html-format">HTML Format</label><br>
+
+          <input type="radio" id="PT-format" name="email-format">
+          <label for="PT-format">Plain Text</label>
 
           <label>Other topics you would like to hear about?</label>
           <textarea name="customer-comments" id="cust-comments" placeholder="Enter in comments or topics" rows="10" cols="50"></textarea>
