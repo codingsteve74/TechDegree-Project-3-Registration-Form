@@ -15,13 +15,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600&family=Noto+Serif+HK:wght@900&display=swap" rel="stylesheet">
 
   <body>
-
-
-
     <header>
-
       <p class="top-header">The Code Review</p>
- 
     </header>
 
     <main>
@@ -31,8 +26,6 @@
         Get the latest news on how your is doing right in your inbox.
       </p>
 
-      <hr id="upper-line">
-      
       <form>
         <fieldset>
           <legend>Contact Information</legend>
@@ -120,36 +113,60 @@
             </select>
           </div>
 
-          <div class="col1">
+          <div class="col1" id="news-head-format">
             <label for="cust-zip">Zip Code</label>
-            <input type="text" id="cust-zip" name="customer=zip=code" minlength="6" required>
+            <input class="cst-zip" type="text" id="cust-zip" name="customer=zip=code" minlength="6" required>
           </div>
 
         </fieldset>
 
+
+
         <fieldset>
-          <legend>newsletter</legend>
+          <legend>Newsletter</legend>
 
-          <label>Select the newsletters you would like to recieve.</label><br>
+          <label id="newsletter-email-heading">Select the newsletters you would like to recieve.</label><br>
 
-          <input type="checkbox" id="html-options" name="html-options">
-          <label for="html-options">HTML News</label><br>
+          <div class="newletter-section-choices">
 
-          <input type="checkbox" id="css-options" name="css-options">
-          <label for="css-options">CSS News</label><br>
-        
-          <input type="checkbox" id="js-options" name="js-options">
-          <label for="js-options">JavaScript News</label><br>
+            <div class="newsletter-options"> 
+              <div class="form-formatting">
+                <input type="checkbox" id="html-options" name="html-options">
+                <label for="html-options">HTML News</label><br>
+              </div>
 
-          <label>newsletter Format</label><br>
-          <input type="radio" id="html-format" name="email-format">
-          <label for="html-format">HTML Format</label><br>
+              <div>
+                <input type="checkbox" id="css-options" name="css-options">
+                <label for="css-options">CSS News</label><br>
+              </div>
 
-          <input type="radio" id="PT-format" name="email-format">
-          <label for="PT-format">Plain Text</label>
+             <div>
+              <input type="checkbox" id="js-options" name="js-options">
+              <label for="js-options">JavaScript News</label><br>
+             </div>
 
-          <label>Other topics you would like to hear about?</label>
-          <textarea name="customer-comments" id="cust-comments" placeholder="Enter in comments or topics" rows="10" cols="50"></textarea>
+            </div>
+
+          </div>
+          
+          <label id="newletter-head-format">newsletter Format</label><br>
+
+          <div class="email-format-chioces">
+
+            <div>
+              <input type="radio" id="html-format" name="email-format">
+              <label for="html-format">HTML Format</label><br>
+            </div>
+  
+            <div id="news-page-format">
+              <input type="radio" id="PT-format" name="email-format">
+              <label for="PT-format">Plain Text</label><br>
+            </div>
+
+            <label>Other topics you would like to hear about?</label>
+            <textarea name="customer-comments" id="cust-comments" placeholder="Enter in comments or topics" rows="10" cols="53"></textarea>
+          </div>
+
         </fieldset>
 
         <button name="btn-submit" id="submit-button">Sign Up</button>
