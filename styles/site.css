@@ -55,7 +55,8 @@ input[type=text]::placeholder, input[type=email]::placeholder {
 
 
 form {
-    border-top: 3px solid black;
+    margin: 0 auto;
+    width: 100%;
 }
 
 
@@ -78,7 +79,6 @@ form {
     line-height: 1.5;
     padding-left: 2rem;
     padding-bottom: 4rem;
-    border-bottom: 7px solid black;
     margin-bottom: 5px;
     
 }
@@ -199,6 +199,18 @@ footer {
     padding-bottom: 1rem;
 }
 
+#top-line {
+    height: 7px;
+    background-color: black;
+    margin-bottom: 0px;
+    width: 100%
+}
+
+#bottom-line {
+    height: 3px;
+    background-color: black;
+}
+
 
 
 
@@ -206,14 +218,22 @@ footer {
 
 @media screen and (min-width: 1024px) {
     body {
-        max-width: 60%;
+        max-width: 70%;
         
+    }
+
+    form {
+        padding-left: 5rem;
     }
 
     .col1 {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
+    }
+
+    .col1 > label {
+        flex-basis: 190px;
     }
 
     textarea {
@@ -221,8 +241,9 @@ footer {
     }
 
     div > label {
-        padding-right: 10px;
+        
         text-align: left;
+        
     }
 
     div > input[type=text], input[type=email], input[type=tel], .ddm-list {
@@ -231,10 +252,7 @@ footer {
     }
 
     [id~=cust-zip] {
-        max-width: 40%;
+        max-width: 200px
     
-    }
-
-    .desktop-vw {
     }
 }
