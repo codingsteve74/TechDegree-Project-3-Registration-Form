@@ -50,12 +50,12 @@
 
           <div class="col1">
             <label for="cust-address">Street Address:</label>
-            <input type="text" id="cust-address" name="customer-address" minlength="10" required>
+            <input type="text" id="cust-address" name="customer-address" minlength="10" placeholder="Required" required>
           </div>
 
           <div class="col1">
             <label for="cust-city">City:</label>
-            <input type="text" id="cust-city" name="customer-city" minlength="5" required>
+            <input type="text" id="cust-city" name="customer-city" minlength="5" placeholder="Required" required>
           </div>
 
           <div class="col1">
@@ -134,17 +134,17 @@
 
             <div class="newsletter-options"> 
               <div class="form-formatting">
-                <input type="checkbox" id="html-options" name="html-options">
+                <input type="checkbox" id="html-options" name="html-options" value="chk-htl">
                 <label for="html-options">HTML News</label><br>
               </div>
 
               <div>
-                <input type="checkbox" id="css-options" name="css-options">
+                <input type="checkbox" id="css-options" name="css-options" value="chd-css">
                 <label for="css-options">CSS News</label><br>
               </div>
 
              <div>
-              <input type="checkbox" id="js-options" name="js-options">
+              <input type="checkbox" id="js-options" name="js-options" value="chk-javascript">
               <label for="js-options">JavaScript News</label><br>
              </div>
 
@@ -157,17 +157,17 @@
           <div class="email-format-chioces">
 
             <div>
-              <input type="radio" id="html-format" name="email-format">
+              <input type="radio" id="html-format" name="email-format" value="rad-html">
               <label for="html-format">HTML Format</label><br>
             </div>
   
             <div id="news-page-format">
-              <input type="radio" id="PT-format" name="email-format">
+              <input type="radio" id="PT-format" name="email-format" value="rad-plaintext">
               <label for="PT-format">Plain Text</label><br>
             </div>
 
-            <label>Other topics you would like to hear about?</label>
-            <textarea name="customer-comments" id="cust-comments" placeholder="Enter in comments or topics" rows="10" ></textarea>
+            <label for="cust-comments">Other topics you would like to hear about?</label>
+            <textarea  name="customer-comments" id="cust-comments" placeholder="Enter in comments or topics" rows="10" ></textarea>
           </div>
 
         </fieldset>
