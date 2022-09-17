@@ -234,10 +234,6 @@ footer {
         
     }
 
-    form {
-        padding-left: 5rem;
-    }
-
     .col1 {
         display: flex;
         flex-direction: row;
@@ -245,7 +241,7 @@ footer {
     }
 
     .col1 > label {
-        flex-basis: 190px;
+        flex-basis: 200px;
     }
 
     textarea {
@@ -254,7 +250,7 @@ footer {
 
     div > input[type=text], input[type=email], input[type=tel], .ddm-list {
         
-        width: 55rem;
+        width: 80%;
     }
 
     [id~=cust-zip] {
